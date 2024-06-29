@@ -11,7 +11,7 @@ const app = express();
 const port = 1515;
 
 //API for creating a file in a specific directory
-app.post("/create-file", (req, res) => {
+app.get("/create-file", (req, res) => {
   try {
     // Calling the createFile function to create a file which has not in the specified folder
     createFile();
